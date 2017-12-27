@@ -26,6 +26,7 @@ public class Practice03OnDrawLayout extends LinearLayout {
 
     {
         // 在这里插入 setWillNotDraw(false) 以启用完整的绘制流程
+        setWillNotDraw(false);
     }
 
     @Override
@@ -34,6 +35,14 @@ public class Practice03OnDrawLayout extends LinearLayout {
 
         pattern.draw(canvas);
     }
+
+
+//    @Override
+//    protected void dispatchDraw(Canvas canvas) {
+//        super.dispatchDraw(canvas);
+//        // 或者这样
+//        pattern.draw(canvas);
+//    }
 
     private class Pattern {
         private static final float PATTERN_RATIO = 5f / 6;
